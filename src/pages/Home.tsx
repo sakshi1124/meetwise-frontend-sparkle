@@ -5,36 +5,8 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { useNavigate } from "react-router-dom";
 
-// Placeholder data - will be replaced with backend API calls
-const mockMeetings = [
-  {
-    id: 1,
-    title: "Q4 Planning Meeting",
-    date: "2024-03-15",
-    time: "14:00",
-    duration: "45 mins",
-    status: "processed",
-    participants: 8,
-  },
-  {
-    id: 2,
-    title: "Product Review Session",
-    date: "2024-03-14",
-    time: "10:30",
-    duration: "30 mins",
-    status: "pending",
-    participants: 5,
-  },
-  {
-    id: 3,
-    title: "Team Standup",
-    date: "2024-03-13",
-    time: "09:00",
-    duration: "15 mins",
-    status: "processed",
-    participants: 12,
-  },
-];
+// Empty meetings array - will be populated from backend API calls
+const mockMeetings: any[] = [];
 
 const Home = () => {
   const navigate = useNavigate();
